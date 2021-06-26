@@ -22,9 +22,17 @@ def Q3():
 def Q4():
     print("The mean of price/meter is: R${:.2f}".format(csv.PriceMeterOnlyApart()))
     
-Q1()
-Q2()
-Q3()
-Q4()
+def Q5():
+    print("O bairro mais barato é:", csv.cheapestSuburb()[0] , "com preço por m^2:" , csv.cheapestSuburb()[1])
+    print("O bairro mais caro é:", csv.expensivestSururb()[0] , "com preço por m^2:" , csv.expensivestSururb()[1])
+def Q6():
+    print("A variavel mais correleta com o preço é a:" , csv.corrSpearman("price"))
+#Q1()
+#Q2()
+#Q3()
+#Q4()
+Q5()
+#Q6()
+
 
 
